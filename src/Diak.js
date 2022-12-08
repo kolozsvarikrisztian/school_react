@@ -22,9 +22,6 @@ export function Diak({student}) {
         console.log(diak);
         setFetchPending(false);
     }
-    function refreshPage() {
-        window.location.reload(false);
-      }
     return (
         <div className="col-md-4">
             <CCard>
@@ -40,7 +37,7 @@ export function Diak({student}) {
                 <CCardFooter>
                    {
                     [1, 2, 3, 4, 5].map((grade) => (
-                        <button type="button" onClick={() => jegyetAd(grade), refreshPage} key={grade}>{grade}</button>
+                        <button type="button" onClick={() => jegyetAd(grade)} key={grade}>{grade}</button>
                     ))
                     }
                      
